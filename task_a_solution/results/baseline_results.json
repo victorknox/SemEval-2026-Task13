@@ -1,0 +1,25 @@
+{
+  "model_name": "TF-IDF + Logistic Regression",
+  "timestamp": "2025-11-28T13:02:26.569940",
+  "metrics": {
+    "accuracy": 0.8775,
+    "precision": 0.8780535079468587,
+    "recall": 0.8774240387846206,
+    "f1_score": 0.8774379529636878,
+    "roc_auc": 0.9494261908190531
+  },
+  "training_time": 1.466076135635376,
+  "vectorization_time": 7.678427457809448,
+  "train_samples": 8000,
+  "test_samples": 2000,
+  "confusion_matrix": [
+    [
+      855,
+      141
+    ],
+    [
+      104,
+      900
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+*.pt
+*.pth
+*.bin
+models/
+task_a_solution/models/
+codebert_full_500k/
+*.log
+__pycache__/
+*.pyc
+.venv/
+
+# Large data files
+Task_A/*.parquet
+Task_B/*.parquet
+Task_C/*.parquet
+*.safetensors

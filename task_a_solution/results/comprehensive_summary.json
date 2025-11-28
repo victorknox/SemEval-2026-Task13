@@ -1,0 +1,41 @@
+{
+  "models_compared": 3,
+  "best_model": "CodeBERT",
+  "best_f1_score": 0.9594977217468483,
+  "baseline_f1_score": 0.8774379529636878,
+  "improvement": 0.08205976878316057,
+  "all_metrics": [
+    {
+      "Model": "Baseline\n(TF-IDF + LR)",
+      "Accuracy": 0.8775,
+      "Precision": 0.8780535079468587,
+      "Recall": 0.8774240387846206,
+      "F1-Score": 0.8774379529636878,
+      "ROC-AUC": 0.9494261908190531
+    },
+    {
+      "Model": "DistilBERT",
+      "Accuracy": 0.88,
+      "Precision": 0.8815299444379718,
+      "Recall": 0.8798740779852477,
+      "F1-Score": 0.8798528197041375,
+      "ROC-AUC": 0.9553462855405687
+    },
+    {
+      "Model": "CodeBERT",
+      "Accuracy": 0.9595,
+      "Precision": 0.9595336035660316,
+      "Recall": 0.9594853517656283,
+      "F1-Score": 0.9594977217468483,
+      "ROC-AUC": 0.9923618777900447
+    }
+  ],
+  "error_analysis": {
+    "distilbert_total_errors": 240,
+    "distilbert_error_rate": 0.12,
+    "codebert_total_errors": 81,
+    "codebert_error_rate": 0.0405,
+    "models_disagree_count": 231,
+    "models_disagree_rate": 0.1155
+  }
+}

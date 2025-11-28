@@ -1,0 +1,14 @@
+{
+  "model": "microsoft/codebert-base",
+  "train_samples": 500000,
+  "val_samples": 20000,
+  "epochs": 1,
+  "batch_size": 64,
+  "max_length": 384,
+  "accuracy": 0.9937,
+  "f1_macro": 0.9936885462261493,
+  "f1_weighted": 0.9936999731132069,
+  "training_time_minutes": 23.41425717274348,
+  "errors": 126,
+  "timestamp": "2025-11-28T14:13:14.502583"
+}

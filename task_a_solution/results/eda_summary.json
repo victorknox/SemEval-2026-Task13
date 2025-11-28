@@ -1,0 +1,27 @@
+{
+  "total_samples": 10000,
+  "label_distribution": {
+    "0": 4979,
+    "1": 5021
+  },
+  "language_distribution": {
+    "Python": 7104,
+    "C++": 1778,
+    "Java": 1118
+  },
+  "unique_generators": 62,
+  "code_length_stats": {
+    "mean": 690.3467,
+    "median": 473.5,
+    "std": 704.5412519765495,
+    "min": 24,
+    "max": 10160
+  },
+  "code_lines_stats": {
+    "mean": 32.0587,
+    "median": 22.0,
+    "std": 34.686518559333344,
+    "min": 1,
+    "max": 299
+  }
+}

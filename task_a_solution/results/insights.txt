@@ -1,0 +1,13 @@
+KEY INSIGHTS FOR HUMAN VS MACHINE CODE
+================================================================================
+
+• max_nesting: HIGHER in MACHINE code (H=0.463, M=2.956)
+• indent_variance: HIGHER in MACHINE code (H=3.096, M=15.816)
+• max_indent: HIGHER in MACHINE code (H=4.139, M=11.424)
+• avg_indent: HIGHER in MACHINE code (H=1.839, M=4.266)
+• has_return: HIGHER in MACHINE code (H=0.094, M=0.622)
+• blank_line_ratio: HIGHER in MACHINE code (H=0.117, M=0.154)
+• num_hash_comments: HIGHER in MACHINE code (H=0.676, M=3.886)
+• num_blank_lines: HIGHER in HUMAN code (H=7.792, M=7.090)
+• has_if: HIGHER in MACHINE code (H=0.287, M=0.778)
+• special_char_ratio: HIGHER in HUMAN code (H=0.221, M=0.166)

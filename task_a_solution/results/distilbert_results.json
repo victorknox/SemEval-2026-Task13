@@ -1,0 +1,30 @@
+{
+  "model_name": "DistilBERT",
+  "model_checkpoint": "distilbert-base-uncased",
+  "timestamp": "2025-11-28T13:05:35.128664",
+  "metrics": {
+    "accuracy": 0.88,
+    "precision": 0.8815299444379718,
+    "recall": 0.8798740779852477,
+    "f1_score": 0.8798528197041375,
+    "roc_auc": 0.9553462855405687
+  },
+  "training_time": 79.82510304450989,
+  "train_samples": 8000,
+  "test_samples": 2000,
+  "confusion_matrix": [
+    [
+      845,
+      151
+    ],
+    [
+      89,
+      915
+    ]
+  ],
+  "training_args": {
+    "epochs": 3,
+    "batch_size": 16,
+    "learning_rate": 5e-05
+  }
+}

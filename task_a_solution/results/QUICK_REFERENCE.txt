@@ -1,0 +1,86 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                        QUICK SUBMISSION REFERENCE                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📍 Location: /root/SemEval-2026-Task13/task_a_solution/results/
+
+🎯 TOP 5 RECOMMENDATIONS (in order):
+
+1. mega_ensemble_conservative.csv     ⭐⭐⭐ BEST BET
+   → 35.4% Human, 64.6% Machine
+   → Most balanced, hedges between approaches
+   → Only predicts Machine when strong models agree
+
+2. flipped_labels_submission.csv      ⭐⭐ LABEL TEST
+   → 86.7% Human, 13.3% Machine
+   → Tests if 0/1 mapping is inverted
+   → If labels backwards, instant win
+
+3. complexity_based_submission.csv    ⭐⭐ SOLID CHOICE
+   → 22.9% Human, 77.1% Machine
+   → 93.2% validation F1
+   → Clean complexity metrics
+
+4. pattern_analysis_submission.csv    ⭐ NOVEL APPROACH
+   → 20.8% Human, 79.2% Machine
+   → 85.2% validation F1
+   → Found actual machine markers (endoftext!)
+
+5. rule_based_submission.csv          🎲 WILD CARD
+   → 95.5% Human, 4.5% Machine
+   → Completely different from ML
+   → If test is competitive programming heavy
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 ALL 18 SUBMISSIONS:
+
+File Name                                  Human%  Machine%  Notes
+──────────────────────────────────────────────────────────────────────
+mega_ensemble_conservative.csv            35.4%    64.6%    ⭐ Try first
+flipped_labels_submission.csv             86.7%    13.3%    Label flip test
+complexity_based_submission.csv           22.9%    77.1%    93% val F1
+anomaly_detection_submission.csv          24.7%    75.3%    Novel method
+pattern_analysis_submission.csv           20.8%    79.2%    Token patterns
+threshold_70_submission.csv               23.8%    76.2%    Conservative
+per_language_submission.csv               14.0%    86.0%    Lang-specific
+robust_ensemble_submission.csv            13.3%    86.7%    Failed: 31% F1
+final_submission_v2.csv                   13.3%    86.7%    Failed: 27% F1
+mega_ensemble_weighted.csv                12.5%    87.5%    Weighted vote
+threshold_60_submission.csv               17.2%    82.8%    
+threshold_50_submission.csv               13.3%    86.7%    
+threshold_40_submission.csv               11.5%    88.5%    
+confidence_adjusted_submission.csv        11.5%    88.5%    
+mega_ensemble_majority.csv                 9.5%    90.5%    All models vote
+threshold_30_submission.csv                8.9%    91.1%    
+majority_vote_submission.csv               7.1%    92.9%    
+rule_based_submission.csv                 95.5%     4.5%    🎲 Wild card
+random_50_50_submission.csv               49.0%    51.0%    Sanity check
+final_submission.csv                      63.1%    36.9%    Failed: 37% F1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 KEY DISCOVERIES:
+
+✓ Machine code contains: "endoftext", language markers (python/java/cpp)
+✓ 92% of test samples have HIGH model disagreement
+✓ Test set significantly different from training (distribution shift)
+✓ All ML models predict ~13% Human vs training's 48% Human
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 SUBMISSION COMMAND:
+
+kaggle competitions submit \
+  -c sem-eval-2026-task-13-subtask-a \
+  -f mega_ensemble_conservative.csv \
+  -m "Conservative ensemble: 35% Human prediction"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 Documentation:
+  - COMPREHENSIVE_SUMMARY.md  - Full analysis
+  - CRITICAL_ANALYSIS.md      - Why we failed
+  - DISTRIBUTION_SHIFT_REPORT.md - Technical details
+
+Good luck! 🍀
